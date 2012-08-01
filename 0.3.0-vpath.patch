@@ -1,0 +1,11 @@
+--- origsrc/hippo-canvas-0.3.0/docs/Makefile.am	2008-03-25 09:20:27.000000000 -0500
++++ src/hippo-canvas-0.3.0/docs/Makefile.am	2012-07-31 20:28:44.484828100 -0500
+@@ -15,7 +15,7 @@ DOC_MAIN_SGML_FILE=hippo-canvas.xml
+ SCAN_OPTIONS=
+ 
+ # The directory containing the source code. Relative to $(srcdir)
+-DOC_SOURCE_DIR=../common/hippo
++DOC_SOURCE_DIR=$(top_srcdir)/common/hippo
+ 
+ HFILE_GLOB=
+ CFILE_GLOB=
