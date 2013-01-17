@@ -1,6 +1,9 @@
 inherit gnome2 pygtk
 
-CATEGORY="Gnome"
+NAME="hippo-canvas"
+VERSION=0.3.0
+RELEASE=2
+CATEGORY="GNOME"
 SUMMARY="GTK+ canvas with CSS styling support"
 DESCRIPTION="The Hippo Canvas is a Cairo/GObject/GTK+ based canvas,
 written in C with support for flexible layout, CSS styling, and initial
@@ -11,9 +14,9 @@ PATCH_URI="0.3.0-vpath.patch"
 PKG_NAMES="libhippocanvas1_0 libhippocanvas1-devel python-hippo"
 libhippocanvas1_0_CONTENTS="usr/bin/cyghippocanvas-1-0.dll usr/share/doc/"
 libhippocanvas1_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+python_hippo_CATEGORY="Python"
 python_hippo_REQUIRES="python-gtk2.0"
 python_hippo_CONTENTS=${PYTHON_SITELIB#/}
 
 DIFF_EXCLUDES="*-type-builtins.*"
 
-KEEP_LA_FILES="none"
