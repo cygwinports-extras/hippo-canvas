@@ -1,0 +1,10 @@
+--- origsrc/hippo-canvas-0.3.0/python/hippo.override	2008-05-21 18:22:02.000000000 -0500
++++ src/hippo-canvas-0.3.0/python/hippo.override	2013-10-21 21:25:48.045481800 -0500
+@@ -19,6 +19,7 @@ headers
+ #include "hippo/hippo-canvas-widget.h"
+ #include "hippo/hippo-canvas-window.h"
+ #include "hippo/hippo-canvas-widgets.h"
++#include "hippo/hippo-canvas-test.h"
+ 
+ #include "hippo/hippo-canvas-type-builtins.h"
+ 

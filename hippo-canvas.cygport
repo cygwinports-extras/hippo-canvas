@@ -9,11 +9,16 @@ DESCRIPTION="The Hippo Canvas is a Cairo/GObject/GTK+ based canvas,
 written in C with support for flexible layout, CSS styling, and initial
 work on animations."
 
-PATCH_URI="0.3.0-vpath.patch"
+PATCH_URI="
+	0.3.0-vpath.patch
+	0.3.0-Winherit-decls.patch
+"
 
-PKG_NAMES="libhippocanvas1_0 libhippocanvas1-devel python-hippo"
+PKG_NAMES="libhippocanvas1_0 libhippocanvas1-devel libhippocanvas1-doc python-hippo"
 libhippocanvas1_0_CONTENTS="usr/bin/cyghippocanvas-1-0.dll usr/share/doc/"
-libhippocanvas1_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+libhippocanvas1_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libhippocanvas1_doc_CATEGORY="Doc"
+libhippocanvas1_doc_CONTENTS="usr/share/gtk-doc/"
 python_hippo_CATEGORY="Python"
 python_hippo_REQUIRES="python-gtk2.0"
 python_hippo_CONTENTS=${PYTHON_SITELIB#/}
